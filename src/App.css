@@ -1,0 +1,93 @@
+body{
+  background-color: rgb(241, 241, 241);
+}
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+#program{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: 290px;
+  top: -700px;
+  position: relative;
+}
+#program h3{
+  color: rgb(34, 34, 160);
+}
+.data {
+  padding: 5px 25px 10px 25px;
+  max-width: 70%;
+  background-color: white;
+  margin: 20px;
+  margin-top: 0px;
+}
+.data p{
+  font-weight: bolder;
+}
+.data p span{
+  font-weight: lighter;
+  color: rgb(34, 34, 160);
+}
+.buttons{
+  height: 700px;
+  width: 250px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.buttons p{
+  text-decoration-line: underline;
+  text-decoration-color: rgb(139, 139, 139);
+  font-size: 20px;
+  text-align: center ;
+}
+.buttons h3{
+  margin-left: 8px;
+}
+#title{
+  margin-left: 20px;
+}
+.buttons button{
+  background-color: rgb(226, 253, 170);
+  height: 30px;
+  width: 80px;
+  margin: 20px;
+  margin-top: 0px;
+  border-radius: 5px;
+  border: none;
+}
+.buttons button:focus {     
+  background-color:rgb(190, 255, 61);
+  outline: none;
+}
+@media screen and (min-width: 694px) and (max-width: 915px) {
+  .data {
+    max-width: 33%;
+  }
+}
+
+@media screen and (min-width: 652px) and (max-width: 693px) {
+  .data {
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 651px) {
+  .data{
+    max-width: 100%;
+    margin: auto;
+  }
+  #program{
+    top: 0px;
+    margin-left: 0px;
+  }
+  .buttons{
+    margin-left: 118px ;
+  }
+}
